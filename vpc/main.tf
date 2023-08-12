@@ -1,4 +1,4 @@
 resource "aws_vpc" "this" {
-  cidr_block       = locals.cidr
+  cidr_block       = local.cidr
   instance_tenancy = "default"
 }

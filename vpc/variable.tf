@@ -1,7 +1,3 @@
-/*
-variable "tags"{
-     type = map
-     default = {
-     Name = vpc
-     }
-} */
+variable  "cidr"{
+type = string
+}

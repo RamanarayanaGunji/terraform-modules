@@ -32,4 +32,16 @@ variable "public-route-table-tags"{
      Name = "public-route-table"
      }
 }
+variable "nat-tags"{
+     type = map
+     default ={
+     Name = "nat"
+     }
+}
+variable "private-route-table-tags"{
+     type = map
+     default ={
+     Name = "private-route-table"
+     }
+}
 

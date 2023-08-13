@@ -8,3 +8,28 @@ variable "tags"{
       Name = "vpc"
       }
   }
+variable "igw-tags"{
+      type = map
+      default ={
+      Name = "igw"
+      }
+   }
+variable "public-subnet-tags"{
+   type = map
+  default = {
+  Name = "public-subnet"
+   }
+}
+variable "private-subnet-tags"{
+   type = map
+  default = {
+  Name = "private-subnet"
+   }
+}
+variable "public-route-table-tags"{
+     type = map
+     default ={
+     Name = "public-route-table"
+     }
+}
+

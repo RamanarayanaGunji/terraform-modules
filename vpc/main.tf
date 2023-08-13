@@ -31,6 +31,8 @@ resource "aws_route_table" "public-rt" {
   }
   tags = var.public-route-table-tags
   }
+resource "aws_eip" "auto-eip" {
+}
 
 resource "aws_nat_gateway" "nat" {
   allocation_id = aws_eip.auto-eip.id

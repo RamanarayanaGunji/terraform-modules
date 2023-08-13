@@ -5,6 +5,6 @@ type = string
 variable "tags"{
      type = map
      default = {
-      Name = vpc
+      Name = "vpc"
       }
   }
